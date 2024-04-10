@@ -6,12 +6,12 @@ import { Text, StyleSheet, View, TextInput, TouchableOpacity } from 'react-nativ
 export default function Home() {
     const [isPressed, setisPressed] = useState(false);
     const [cal_value, setCal_value] = useState('');
-    const [final_ans,setFinal_ans]=useState();
+    // const [final_ans,setFinal_ans]=useState();
     const submit_btnBgColor = isPressed ? "blue" : "white";
     const submit_btnTextColor = isPressed ? "white" : "black";
 
-    const AccessValue = (props) => {
-        setCal_value(cal_value + props);
+    const AccessValue = (prop) => {
+        setCal_value(cal_value + prop);
     }
 
     const Submit = () => {
@@ -23,7 +23,7 @@ export default function Home() {
             
         }
         else{
-            alert("Invalid Digit")
+            alert("Invalid Digit.")
         }
     }
 
