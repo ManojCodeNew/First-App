@@ -1,14 +1,14 @@
-        {/* This should be make full screen of display  */}
+{/* This should be make full screen of display  */ }
 
 // import { StatusBar } from 'expo-status-bar';
 
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
-import Home from "./Components/Home.js";
+import Home from "./Components/Calculator.js";
 
 export default function App() {
   const [action, setAction] = useState();
-  
+
 
 
   const [firstin, setFirstin] = useState();
@@ -21,8 +21,8 @@ export default function App() {
   }
 
   const onclick_handle = () => {
-  const value=firstin+"+"+Secin;
-    const Calculated_value=eval(value);
+    const value = firstin + "+" + Secin;
+    const Calculated_value = eval(value);
     setAction(Calculated_value);
   }
   return (
@@ -36,7 +36,7 @@ export default function App() {
         {/* <StatusBar style="auto" /> */}
       </View>
       <View style={styles.body}>
-        <Text>App.js</Text>
+        <Text style={styles.heading}>App.js // Sample Adding Practice </Text>
         <Text>Welcome to my new journey in React Native</Text>
 
         <Text>First Input</Text>
@@ -61,7 +61,7 @@ export default function App() {
         </TouchableOpacity>
         <Text>Strength : {action}</Text>
       </View>
-    <Home/>
+      <Home />
 
     </>
 
@@ -69,6 +69,9 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  heading: {
+    fontWeight: 'bold'
+  },
   container: {
     backgroundColor: 'black',
     alignItems: 'center',
@@ -97,7 +100,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   btn: {
-    backgroundColor: 'red',
+    backgroundColor: 'blue',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
