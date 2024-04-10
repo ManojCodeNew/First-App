@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "FirstApp",
+    "slug": "First-app",
+    "description": "This is my First React Native journey",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Appicon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Appicon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.manoj_c.Firstapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "190a7210-b582-4771-87b8-06167d4dd608"
+      }
+    }
+  }
+}
